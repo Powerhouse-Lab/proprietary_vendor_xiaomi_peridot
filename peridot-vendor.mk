@@ -2356,6 +2356,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0 \
     vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
+    vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk_platform \
     vendor.xiaomi.hardware.quickcamera-V1-ndk_platform \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
@@ -2477,6 +2478,8 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.tsskinbeautifier \
     com.xiaomi.plugin.watermark \
     displayfeature.default \
+    fingerprint.goodix_fod.default \
+    fingerprint.jiiov.default \
     libAncHumanVideoBokehV4 \
     libMiDispDevManager \
     libMiStereoFactoryCalibAnalyzeBin_qual \
@@ -2513,6 +2516,7 @@ PRODUCT_PACKAGES += \
     libflatmode \
     libfpsmonitor \
     libfsalgocal \
+    libgf_hal \
     libhistprocess \
     liblocalFlickerDet \
     libmi-stc-HW-modulate \

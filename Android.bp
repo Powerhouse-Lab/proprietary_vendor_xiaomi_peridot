@@ -32208,56 +32208,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hw.touchfeature-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hw.touchfeature-V1-ndk_platform",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.xiaomi.sensor.citsensorservice-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -38108,46 +38058,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sensors.touch.detect",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/sensors.touch.detect.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-21.7",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libhidltransport",
-                "libhidlbase",
-                "libsensorslog",
-                "libqsh",
-                "libsnsapi",
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.sensors@2.1",
-                "libfmq",
-                "libpower",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "sensors.ultrasoundproximity",
     owner: "xiaomi",
     strip: {
@@ -39208,15 +39118,6 @@ prebuilt_etc_xml {
     name: "manifest_vendor.xiaomi.hardware.mlipay.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.xiaomi.hw.touchfeature-service.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -42770,41 +42671,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.xiaomi.hw.touchfeature-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.xiaomi.hw.touchfeature-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libbase",
-                "liblog",
-                "libbinder_ndk",
-                "vendor.xiaomi.hw.touchfeature-V1-ndk_platform",
-                "android.frameworks.sensorservice@1.0",
-                "android.hardware.sensors@2.0",
-                "libhidlbase",
-                "libmisight",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
 }
 
 cc_prebuilt_binary {

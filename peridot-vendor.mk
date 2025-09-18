@@ -415,11 +415,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_42_0a_0c_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_42_0a_0c_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/peridot/proprietary/odm/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
     vendor/xiaomi/peridot/proprietary/odm/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/xiaomi/peridot/proprietary/odm/etc/init/init.cirrus.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.cirrus.rc \
     vendor/xiaomi/peridot/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-service.rc \
-    vendor/xiaomi/peridot/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/peridot/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/peridot/proprietary/odm/etc/izat_device.conf:$(TARGET_COPY_OUT_ODM)/etc/izat_device.conf \
     vendor/xiaomi/peridot/proprietary/odm/etc/mdss_dsi_n16t_36_0f_0b_dsc_vid_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_n16t_36_0f_0b_dsc_vid_mi.xml \
@@ -2360,8 +2358,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk_platform \
     vendor.xiaomi.hardware.quickcamera-V1-ndk_platform \
-    vendor.xiaomi.hw.touchfeature-V1-ndk \
-    vendor.xiaomi.hw.touchfeature-V1-ndk_platform \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     chre_qsh_shim \
     libCalculator_skel \
@@ -2559,7 +2555,6 @@ PRODUCT_PACKAGES += \
     libwvkeybox \
     libxmi_hdr_checker \
     libxmi_slow_motion_mein \
-    sensors.touch.detect \
     sensors.ultrasoundproximity \
     capi_elus_rx \
     capi_elus_tx \
@@ -2672,7 +2667,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.quickcamera.xml \
     vendor.qti.qesdsys.service.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
-    vendor.xiaomi.hw.touchfeature-service.xml \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     ATFWD-daemon \
     SoterProvisioningTool \
@@ -2787,7 +2781,6 @@ PRODUCT_PACKAGES += \
     xtra-daemon \
     xtwifi-client \
     wfdservice64 \
-    vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl \
     mlipayd
 

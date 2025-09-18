@@ -2481,7 +2481,6 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.swjpegencode \
     com.xiaomi.plugin.tsskinbeautifier \
     com.xiaomi.plugin.watermark \
-    consumerir.qcom \
     displayfeature.default \
     libAncHumanVideoBokehV4 \
     libMiDispDevManager \

@@ -1193,7 +1193,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_4_sm8635.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_4_sm8635.json \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_6.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_6.json \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_6_actuator.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_6_actuator.json \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/xiaomi/peridot/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \

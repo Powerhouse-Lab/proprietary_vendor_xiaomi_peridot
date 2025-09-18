@@ -816,7 +816,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/firmware/gen70900_zap.mbn:$(TARGET_COPY_OUT_ODM)/firmware/gen70900_zap.mbn \
     vendor/xiaomi/peridot/proprietary/odm/firmware/gen71100_zap.mbn:$(TARGET_COPY_OUT_ODM)/firmware/gen71100_zap.mbn \
     vendor/xiaomi/peridot/proprietary/odm/firmware/goodix_cfg_group_peridot_csot.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_cfg_group_peridot_csot.bin \
+    vendor/xiaomi/peridot/proprietary/odm/firmware/goodix_cfg_group_peridot_csot_second.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_cfg_group_peridot_csot_second.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/goodix_firmware_peridot_csot.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_firmware_peridot_csot.bin \
+    vendor/xiaomi/peridot/proprietary/odm/firmware/goodix_firmware_peridot_csot_second.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_firmware_peridot_csot_second.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_ODM)/firmware/goodix_test_limits_255.csv \
     vendor/xiaomi/peridot/proprietary/odm/firmware/haptic_ram.bin:$(TARGET_COPY_OUT_ODM)/firmware/haptic_ram.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/haptic_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/haptic_rtp.bin \

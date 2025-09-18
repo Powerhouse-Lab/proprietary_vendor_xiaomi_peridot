@@ -333,6 +333,49 @@
         <ctl name="WSA_RX0 Digital Volume" value="84" />
         <ctl name="WSA_RX1 Digital Volume" value="84" />
     </path>
+
+    <path name="speaker-top">
+    </path>
+
+    <path name="speaker-top-prot">
+        <path name="speaker-top" />
+    </path>
+
+    <path name="speaker-bot">
+    </path>
+
+    <path name="speaker-bot-prot">
+        <path name="speaker-bot" />
+    </path>
+
+    <path name="speaker-tl">
+    </path>
+
+    <path name="speaker-tl-prot">
+        <path name="speaker-tl" />
+    </path>
+
+    <path name="speaker-tr">
+    </path>
+
+    <path name="speaker-tr-prot">
+        <path name="speaker-tr" />
+    </path>
+
+    <path name="speaker-bl">
+    </path>
+
+    <path name="speaker-bl-prot">
+        <path name="speaker-bl" />
+    </path>
+
+    <path name="speaker-br">
+    </path>
+
+    <path name="speaker-br-prot">
+        <path name="speaker-br" />
+    </path>
+
     <path name="haptics-dev">
         <ctl name="SWR DAC_Port Switch" value="1" />
     </path>
@@ -566,6 +609,12 @@
 
     <!-- add new controls start -->
     <path name="main-mic">
+    </path>
+
+    <path name="sidetop-mic">
+    </path>
+
+    <path name="sidebottom-mic">
     </path>
     <!-- add new controls end -->
 
@@ -997,6 +1046,18 @@
         <ctl name="TX DMIC MUX2" value="DMIC1" />
     </path>
 
+    <path name="speaker-tmic-endfire">
+    </path>
+
+    <path name="speaker-tmic-surround">
+    </path>
+
+    <path name="speaker-tmic-multi">
+    </path>
+
+    <path name="speaker-tmic-single">
+    </path>
+
     <path name="dmic-endfire">
         <path name="handset-dmic-endfire" />
         <ctl name="IIR0 INP0 MUX" value="DEC2" />
@@ -1316,20 +1377,6 @@
     <path name="back-mic">
     </path>
 
-    <path name="speaker-top">
-    </path>
-
-    <path name="speaker-top-prot">
-        <path name="speaker-top" />
-    </path>
-
-    <path name="speaker-bot">
-    </path>
-
-    <path name="speaker-bot-prot">
-        <path name="speaker-bot" />
-    </path>
-
     <path name="speaker-movie">
     </path>
 
@@ -1368,7 +1415,7 @@
     <path name="headset-va-mic-asr">
     </path>
 
-        <!-- Dual ADC MIC devices -->
+    <!-- Dual ADC MIC devices -->
     <path name="handset-dmic-dual-adc">
     </path>
 

@@ -55,6 +55,10 @@ on early-init
 
     write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
 
+on init
+    start vendor-early_eth
+    start memory-boot
+
 on post-fs
     wait_for_prop vendor.all.modules.ready 1
 
@@ -88,13 +92,21 @@ on boot && property:ro.boot.ramdump=enable
     chown root system /dev/block/sda33
     chmod 0660 /dev/block/sda33
 
-on boot && property:ro.boot.ramdump=enable && property:ro.build.product=chenfeng
+on boot && property:ro.boot.ramdump=enable && property:ro.product.device=chenfeng
     chown root system /dev/block/sda31
     chmod 0660 /dev/block/sda31
 
-on boot && property:ro.boot.ramdump=enable && property:ro.build.product=peridot
+on boot && property:ro.boot.ramdump=enable && property:ro.product.device=peridot
     chown root system /dev/block/sda31
     chmod 0660 /dev/block/sda31
+
+on boot && property:ro.boot.ramdump=enable && property:ro.product.device=amethyst
+    chown root system /dev/block/sda32
+    chmod 0660 /dev/block/sda32
+
+on boot && property:ro.boot.ramdump=enable && property:ro.product.device=aurora
+    chown root system /dev/block/sda36
+    chmod 0660 /dev/block/sda36
 
 on boot
     # Allow access to dload sysfs node
@@ -177,6 +189,13 @@ service kernel-post-boot /vendor/bin/sh /vendor/bin/init.kernel.post_boot.sh
     disabled
     oneshot
 
+service memory-boot /vendor/bin/sh /vendor/bin/init.kernel.post_boot-memory.sh
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     #Reset read ahead for dm-0, dm-1 and dm-2 to 512kb
@@ -221,3 +240,11 @@ service load_dlkm /vendor/bin/load_dlkm
     stdio_to_kmsg
     seclabel u:r:vendor_modprobe:s0
     oneshot
+
+service vendor-early_eth /vendor/bin/sh /vendor/bin/early_eth.sh
+    user net_admin
+    group system inet net_admin
+    capabilities NET_ADMIN
+    disabled
+    oneshot
+    timeout_period 2

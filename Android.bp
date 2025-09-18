@@ -39448,32 +39448,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "charge_logger",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/charge_logger",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "cnd",
     owner: "xiaomi",
     target: {

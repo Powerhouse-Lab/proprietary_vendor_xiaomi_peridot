@@ -762,6 +762,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.mbn \
     vendor/xiaomi/peridot/proprietary/odm/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_ODM)/firmware/CAMERA_ICP.mdt \
     vendor/xiaomi/peridot/proprietary/odm/firmware/Conf_MultipleTest_TianMa.ini:$(TARGET_COPY_OUT_ODM)/firmware/Conf_MultipleTest_TianMa.ini \
+    vendor/xiaomi/peridot/proprietary/odm/firmware/Conf_MultipleTest_TianMa2.ini:$(TARGET_COPY_OUT_ODM)/firmware/Conf_MultipleTest_TianMa2.ini \
     vendor/xiaomi/peridot/proprietary/odm/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/aw8697_rtp_1.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_1.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw882xx_acf.bin \
@@ -810,6 +811,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/firmware/evass.mbn:$(TARGET_COPY_OUT_ODM)/firmware/evass.mbn \
     vendor/xiaomi/peridot/proprietary/odm/firmware/evass.mdt:$(TARGET_COPY_OUT_ODM)/firmware/evass.mdt \
     vendor/xiaomi/peridot/proprietary/odm/firmware/focaltech_ts_fw_TianMa.bin:$(TARGET_COPY_OUT_ODM)/firmware/focaltech_ts_fw_TianMa.bin \
+    vendor/xiaomi/peridot/proprietary/odm/firmware/focaltech_ts_fw_TianMa2.bin:$(TARGET_COPY_OUT_ODM)/firmware/focaltech_ts_fw_TianMa2.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/fs19xx.fsm:$(TARGET_COPY_OUT_ODM)/firmware/fs19xx.fsm \
     vendor/xiaomi/peridot/proprietary/odm/firmware/gen70900_zap.mbn:$(TARGET_COPY_OUT_ODM)/firmware/gen70900_zap.mbn \
     vendor/xiaomi/peridot/proprietary/odm/firmware/gen71100_zap.mbn:$(TARGET_COPY_OUT_ODM)/firmware/gen71100_zap.mbn \

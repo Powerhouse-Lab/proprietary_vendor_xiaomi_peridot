@@ -2786,6 +2786,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     vendor_lib64_camera_aon_front_1_pb \
+    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so \

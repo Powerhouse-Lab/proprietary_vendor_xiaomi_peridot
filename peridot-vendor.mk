@@ -440,6 +440,45 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_02_0a_dsc_vid/mi_gc_1.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_02_0a_dsc_vid/mi_gc_1.txt \
     vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_02_0a_dsc_vid/mi_gc_2.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_02_0a_dsc_vid/mi_gc_2.txt \
     vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_02_0a_dsc_vid/mi_gc_3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_02_0a_dsc_vid/mi_gc_3.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/cct_pcc.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/cct_pcc.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut0.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut1.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut1.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut2.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut2.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut3.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut4.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut4.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut5.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut5.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut6.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut6.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut7.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLut7.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLutInfo.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/ClstcLutInfo.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/PicHDRLchIn.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/PicHDRLchIn.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/clstc_gc_0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/clstc_gc_0.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/clstc_igc_0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/clstc/clstc_igc_0.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLutInfo.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLutInfo.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_0.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_1.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_1.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_10.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_10.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_11.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_11.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_12.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_12.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_13.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_13.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_14.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_14.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_15.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_15.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_16.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_16.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_17.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_17.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_18.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_18.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_19.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_19.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_2.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_2.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_20.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_20.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_3.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_4.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_4.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_5.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_5.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_6.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_6.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_7.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_7.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_8.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_8.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_9.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/miLut_9.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/mi_gc_0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/mi_gc_0.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/mi_gc_1.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/mi_gc_1.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/mi_gc_2.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/mi_gc_2.txt \
+    vendor/xiaomi/peridot/proprietary/odm/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/mi_gc_3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_n16t_42_0a_0c_dsc_vid/mi_gc_3.txt \
     vendor/xiaomi/peridot/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_36_0f_0b_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_36_0f_0b_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/peridot/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_42_02_0a_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_42_02_0a_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/peridot/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_42_0a_0c_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_42_0a_0c_video_mode_dsc_dsi_panel.json \

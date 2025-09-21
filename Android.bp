@@ -40,6 +40,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.security.keymintperidot",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.security.keymintperidot.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "xiaomi",
     strip: {
@@ -6184,7 +6210,7 @@ cc_prebuilt_library_shared {
                 "libjc_keymint_transport_nxp",
                 "libbinder_ndk",
                 "libmemunreachable",
-                "android.hardware.security.keymint-V4-ndk",
+                "android.hardware.security.keymintperidot",
                 "libc++",
                 "libc",
                 "libm",
@@ -40499,7 +40525,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.security.keymint-V4-ndk",
+                "android.hardware.security.keymintperidot",
                 "libc++",
                 "libc",
                 "libm",

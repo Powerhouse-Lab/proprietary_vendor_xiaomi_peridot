@@ -3012,7 +3012,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libaudioroute",
+                "libaudioroute-v34",
                 "libarmemlog",
                 "libmisight",
                 "libxlog",
@@ -3046,7 +3046,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libexpat",
-                "libaudioroute",
+                "libaudioroute-v34",
                 "libcutils",
                 "libutilscallstack",
                 "libaudioroute_ext",
@@ -6299,7 +6299,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libkaraokepal.so",
             ],
             shared_libs: [
-                "libaudioroute",
+                "libaudioroute-v34",
                 "libaudioutils",
                 "libcutils",
                 "libexpat",
@@ -7434,7 +7434,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libagm",
-                "libaudioroute",
+                "libaudioroute-v34",
                 "liblog",
                 "libcutils",
                 "libexpat",
@@ -33228,7 +33228,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libtinyalsa",
-                "libaudioroute",
+                "libaudioroute-v34",
                 "libexpat",
                 "libc++",
                 "libc",

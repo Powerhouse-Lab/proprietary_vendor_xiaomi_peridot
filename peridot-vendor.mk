@@ -1038,9 +1038,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/peridot/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/peridot/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/xiaomi/peridot/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/xiaomi/peridot/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/peridot/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/xiaomi/peridot/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/xiaomi/peridot/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/peridot/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
     vendor/xiaomi/peridot/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/peridot/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
@@ -2594,6 +2596,8 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     uimgbaservice \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     AtFwd2 \
     ImsRcsService \
     QCC \
@@ -2608,6 +2612,7 @@ PRODUCT_PACKAGES += \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \
+    com.android.hotwordenrollment.common.util \
     qcrilhook \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \

@@ -1177,7 +1177,6 @@ PRODUCT_PACKAGES += \
     libcneoplookup \
     libcneqmiutils \
     libcodec2_soft_ac4dec \
-    libcodec2_soft_common_prebuilt \
     libcodec2_soft_ddpdec \
     libcodec2_store_dolby \
     libconfigdb \

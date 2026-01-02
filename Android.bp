@@ -40,32 +40,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.security.keymintperidot",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.security.keymintperidot.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.security.secureclock-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "xiaomi",
     strip: {
@@ -586,38 +560,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "ese_weaver",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/ese_weaver.so",
-            ],
-            shared_libs: [
-                "android.se.omapi-V1-ndk",
-                "libcutils",
-                "libjc_keymint_transport_nxp",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -2766,7 +2708,7 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "libGLESv2",
                 "libGLESv3",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libm",
                 "libc",
             ],
@@ -3722,7 +3664,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libVoiceSdk",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -4247,32 +4189,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libdmabufheap",
                 "libvmmem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcppbor_peridot",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcppbor_peridot.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcrypto",
                 "libc++",
                 "libc",
                 "libm",
@@ -4993,7 +4909,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libbinder",
                 "libdrm",
-                "libtinyxml2",
+                "libtinyxml2_bp4a",
                 "libdisplaydebug",
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
@@ -6379,82 +6295,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libjc_keymint_nxp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjc_keymint_nxp.so",
-            ],
-            shared_libs: [
-                "android.hardware.security.rkp-V3-ndk",
-                "android.hardware.security.secureclock-V1-ndk",
-                "android.hardware.security.sharedsecret-V1-ndk",
-                "lib_android_keymaster_keymint_utils",
-                "libbase",
-                "libbinder",
-                "libcppbor_peridot",
-                "libkeymaster_portable",
-                "libkeymaster_messages",
-                "libsoft_attestation_cert",
-                "liblog",
-                "libcrypto",
-                "libcutils",
-                "libjc_keymint_transport_nxp",
-                "libbinder_ndk",
-                "libmemunreachable",
-                "android.hardware.security.keymintperidot",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjc_keymint_transport_nxp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjc_keymint_transport_nxp.so",
-            ],
-            shared_libs: [
-                "android.hardware.secure_element@1.0",
-                "android.hardware.secure_element@1.1",
-                "android.hardware.secure_element@1.2",
-                "android.se.omapi-V1-ndk",
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libjnihelper",
     owner: "xiaomi",
     strip: {
@@ -6732,7 +6572,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libVoiceSdk",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -13377,7 +13217,7 @@ cc_prebuilt_library_shared {
                 "libdisplaydebug",
                 "libsdm-color",
                 "libbinder",
-                "libtinyxml2",
+                "libtinyxml2_bp4a",
                 "libsdmutils",
                 "libdrm",
                 "libdigital-dimming",
@@ -14256,6 +14096,31 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libtinyxml2_1.so",
             ],
             shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtinyxml2_bp4a",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtinyxml2_bp4a.so",
+            ],
+            shared_libs: [
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -22167,7 +22032,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "chre_qsh_shim",
+    name: "vendor_lib_rfsa_adsp_chre_qsh_shim_so",
     filename: "chre_qsh_shim.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/chre_qsh_shim.so",
@@ -22176,7 +22041,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libDspIOProxy_skel",
+    name: "vendor_lib_rfsa_adsp_libDspIOProxy_skel_so",
     filename: "libDspIOProxy_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libDspIOProxy_skel.so",
@@ -22185,7 +22050,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeHtpV73Skel",
+    name: "vendor_lib_rfsa_adsp_libSnpeHtpV73Skel_so",
     filename: "libSnpeHtpV73Skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV73Skel.so",
@@ -22194,7 +22059,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdsp_streamer_qvrcam_receiver",
+    name: "vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so",
     filename: "libdsp_streamer_qvrcam_receiver.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so",
@@ -22203,7 +22068,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libeye_tracking_dsp_sample_skel",
+    name: "vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so",
     filename: "libeye_tracking_dsp_sample_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so",
@@ -22212,7 +22077,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhalide_hexagon_remote_skel",
+    name: "vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so",
     filename: "libhalide_hexagon_remote_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so",
@@ -22221,7 +22086,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libqvr_3dof_tracker_skel",
+    name: "vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so",
     filename: "libqvr_3dof_tracker_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so",
@@ -22230,7 +22095,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libqvr_cam_dsp_driver_skel",
+    name: "vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so",
     filename: "libqvr_cam_dsp_driver_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so",
@@ -22239,7 +22104,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libqvr_dsp_driver_skel",
+    name: "vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so",
     filename: "libqvr_dsp_driver_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so",
@@ -22248,7 +22113,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libtracker_6dof_skel_8450",
+    name: "vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so",
     filename: "libtracker_6dof_skel_8450.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8450.so",
@@ -22257,7 +22122,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "nearby.napp_header",
+    name: "vendor_lib_rfsa_adsp_nearby_napp_header",
     filename: "nearby.napp_header",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/nearby.napp_header",
@@ -22266,7 +22131,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "nearby",
+    name: "vendor_lib_rfsa_adsp_nearby_so",
     filename: "nearby.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/nearby.so",
@@ -38839,7 +38704,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "capi_elus_rx",
+    name: "odm_lib_rfsa_adsp_capi_elus_rx_so",
     filename: "capi_elus_rx.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/capi_elus_rx.so",
@@ -38848,7 +38713,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "capi_elus_tx",
+    name: "odm_lib_rfsa_adsp_capi_elus_tx_so",
     filename: "capi_elus_tx.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/capi_elus_tx.so",
@@ -38857,7 +38722,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libCalculator_skel",
+    name: "odm_lib_rfsa_adsp_libCalculator_skel_so",
     filename: "libCalculator_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libCalculator_skel.so",
@@ -38866,7 +38731,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpV73",
+    name: "odm_lib_rfsa_adsp_libQnnHtpV73_so",
     filename: "libQnnHtpV73.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnHtpV73.so",
@@ -38875,7 +38740,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpV73QemuDriver",
+    name: "odm_lib_rfsa_adsp_libQnnHtpV73QemuDriver_so",
     filename: "libQnnHtpV73QemuDriver.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnHtpV73QemuDriver.so",
@@ -38884,7 +38749,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpV73Skel",
+    name: "odm_lib_rfsa_adsp_libQnnHtpV73Skel_so",
     filename: "libQnnHtpV73Skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnHtpV73Skel.so",
@@ -38893,7 +38758,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpV75",
+    name: "odm_lib_rfsa_adsp_libQnnHtpV75_so",
     filename: "libQnnHtpV75.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnHtpV75.so",
@@ -38902,7 +38767,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpV75Skel",
+    name: "odm_lib_rfsa_adsp_libQnnHtpV75Skel_so",
     filename: "libQnnHtpV75Skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnHtpV75Skel.so",
@@ -38911,7 +38776,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnSaver",
+    name: "odm_lib_rfsa_adsp_libQnnSaver_so",
     filename: "libQnnSaver.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnSaver.so",
@@ -38920,7 +38785,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnSystem",
+    name: "odm_lib_rfsa_adsp_libQnnSystem_so",
     filename: "libQnnSystem.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libQnnSystem.so",
@@ -38929,7 +38794,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeHtpV75Skel",
+    name: "odm_lib_rfsa_adsp_libSnpeHtpV75Skel_so",
     filename: "libSnpeHtpV75Skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libSnpeHtpV75Skel.so",
@@ -38938,7 +38803,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_jpege_skel",
+    name: "odm_lib_rfsa_adsp_libadsp_jpege_skel_so",
     filename: "libadsp_jpege_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libadsp_jpege_skel.so",
@@ -38947,7 +38812,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarc_htp_driver_skel",
+    name: "odm_lib_rfsa_adsp_libarc_htp_driver_skel_so",
     filename: "libarc_htp_driver_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libarc_htp_driver_skel.so",
@@ -38956,7 +38821,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_beauty_hvx_skel",
+    name: "odm_lib_rfsa_adsp_libarcsoft_beauty_hvx_skel_so",
     filename: "libarcsoft_beauty_hvx_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so",
@@ -38965,7 +38830,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_skel",
+    name: "odm_lib_rfsa_adsp_libbitml_nsp_skel_so",
     filename: "libbitml_nsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libbitml_nsp_skel.so",
@@ -38974,7 +38839,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdsp_streamer_binning",
+    name: "odm_lib_rfsa_adsp_libdsp_streamer_binning_so",
     filename: "libdsp_streamer_binning.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libdsp_streamer_binning.so",
@@ -38983,7 +38848,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhme_dsp_skel",
+    name: "odm_lib_rfsa_adsp_libhme_dsp_skel_so",
     filename: "libhme_dsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libhme_dsp_skel.so",
@@ -38992,7 +38857,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmctfengine_skel",
+    name: "odm_lib_rfsa_adsp_libmctfengine_skel_so",
     filename: "libmctfengine_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmctfengine_skel.so",
@@ -39001,7 +38866,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_ai_process_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_ai_process_cdsp_skel_so",
     filename: "libmialgo_ai_process_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_ai_process_cdsp_skel.so",
@@ -39010,7 +38875,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_basic_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so",
     filename: "libmialgo_basic_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so",
@@ -39019,7 +38884,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_bokeh_depth_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_bokeh_depth_cdsp_skel_so",
     filename: "libmialgo_bokeh_depth_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_bokeh_depth_cdsp_skel.so",
@@ -39028,7 +38893,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_bokeh_effect_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_bokeh_effect_cdsp_skel_so",
     filename: "libmialgo_bokeh_effect_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_bokeh_effect_cdsp_skel.so",
@@ -39037,7 +38902,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_ell_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_ell_cdsp_skel_so",
     filename: "libmialgo_ell_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_ell_cdsp_skel.so",
@@ -39046,7 +38911,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_mc_bokeh_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so",
     filename: "libmialgo_mc_bokeh_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so",
@@ -39055,7 +38920,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_rfs_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so",
     filename: "libmialgo_rfs_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so",
@@ -39064,7 +38929,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmlawbpostproc_dsp_skel",
+    name: "odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so",
     filename: "libmlawbpostproc_dsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmlawbpostproc_dsp_skel.so",
@@ -39571,33 +39436,6 @@ prebuilt_etc_xml {
     name: "android.hardware.security.keymint-service-qti.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.security.keymint3-service.strongbox-nxp.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint3-service.strongbox-nxp.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.security.sharedsecret3-service.strongbox-nxp.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret3-service.strongbox-nxp.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.weaver-service.nxp-qti.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.weaver-service.nxp-qti.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -40829,76 +40667,6 @@ cc_prebuilt_binary {
                 "android.hardware.security.rkp-V3-ndk",
                 "android.hardware.security.secureclock-V1-ndk",
                 "android.hardware.security.sharedsecret-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.security.keymint-service.strongbox-nxp",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-nxp",
-            ],
-            shared_libs: [
-                "android.hardware.security.rkp-V3-ndk",
-                "android.hardware.security.sharedsecret-V1-ndk",
-                "lib_android_keymaster_keymint_utils",
-                "android.se.omapi-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcppbor_peridot",
-                "libcrypto",
-                "libkeymaster_portable",
-                "libjc_keymint_nxp",
-                "libjc_keymint_transport_nxp",
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "android.hardware.security.keymintperidot",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.weaver-service.nxp-qti",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.weaver-service.nxp-qti",
-            ],
-            shared_libs: [
-                "android.hardware.weaver-V2-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "liblog",
-                "ese_weaver",
                 "libc++",
                 "libc",
                 "libm",

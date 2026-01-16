@@ -1355,8 +1355,6 @@ PRODUCT_PACKAGES += \
     libperfioctl \
     libperipheral_client \
     libpolygon \
-    libprotobuf-cpp-full-21.7 \
-    libprotobuf-cpp-lite-21.7 \
     libq-perflog \
     libqc2audio_base \
     libqc2audio_basecodec \
@@ -1510,7 +1508,7 @@ PRODUCT_PACKAGES += \
     libsys_info_cache \
     libsystem_health_mon \
     libtaautoload \
-    libtensorflowlite_c \
+    libtensorflowlite_c_vendor \
     libtestutils \
     libthermalclient \
     libthreadutils \
